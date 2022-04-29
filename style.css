@@ -10,18 +10,28 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
 .body-container {
+    width: 800px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10vh 10vw;
+    padding: 5vh 5vw;
 }
 
 .controls-container {
-    margin: 100px;
+    margin-right: 5vw;
     display: flex;
     flex-direction: column;
+
 }
 
 .slider-container {
