@@ -1,4 +1,5 @@
 const container = document.querySelector('.container');
+const slider = document.querySelector('.slider');
 
 for (let i=0; i<(16*16); i++) {
     let div = document.createElement('div');
@@ -14,3 +15,4 @@ squares.forEach(square => {
         square.classList.add('change-color');
     })
 });
+
