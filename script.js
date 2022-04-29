@@ -10,15 +10,20 @@ for (let i=0; i<(16*16); i++) {
     container.appendChild(div);
 }
 
-const squares = document.querySelectorAll('.square');
 
+container.addEventListener('mouseover', function(e) {
+    const target = e.target;
+    if (target.matches('.square')) {
+        target.classList.add('change-color');
+    }
+})
 
 button.addEventListener('click', function() {
-    const squares = document.querySelectorAll('.square');
-
     columns = prompt("How many columns?", "16");
     rows = prompt("How many rows?", "16");
     
+    const squares = document.querySelectorAll('.square');
+    //I think I can also use remove child here
     squares.forEach(square => {
         square.remove();
     });
@@ -32,16 +37,6 @@ button.addEventListener('click', function() {
         container.appendChild(div);
     }
     
-    squares.forEach(square => {
-        square.addEventListener('mouseover', function() {
-            square.classList.add('change-color');
-        })
-    });
-})
 
-squares.forEach(square => {
-    square.addEventListener('mouseover', function() {
-        square.classList.add('change-color');
-    })
-});
+})
 
