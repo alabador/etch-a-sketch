@@ -42,9 +42,6 @@ body {
     align-items: flex-start;
     height: 500px;
     justify-content: flex-start;
-    /* background-color: var(--grid-border);   */
-    /* border: 3px solid var(--grid-border); */
-    /* padding-left: 1em; */
     width: 20vw;
     padding: 0 1em;
     margin-right: 25px;
@@ -55,7 +52,6 @@ body {
     font-weight: 700;
     font-size: 3em;
     color: var(--light-text);
-    /* margin-bottom: 0.5em; */
     margin-top: 0.5em;
 }
 
@@ -92,7 +88,6 @@ body {
 
 
 .eraser {
-    /* height: 100%; */
     padding: 2em;
     border: none;
     border-radius: 8px;
@@ -164,7 +159,6 @@ body {
 }
 
 .sketch-container {
-    /* margin-left: 50px; */
     height: 500px;
     width: 500px;
     display: flex;
@@ -177,17 +171,11 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    /* grid-template-rows: repeat(16, 1fr); */
     width: 100%;
     height: 100%;
-    
-    /* moved border from container to parent */
-    /* border: 3px solid var(--grid-border); */ 
 }
 
 .square {
     width: 100%;
     height: 100%;
-    /* border: 1px solid var(--grid-line-color); */
-    /* background-color: gray;  */
 }
