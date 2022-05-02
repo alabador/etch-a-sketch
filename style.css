@@ -82,12 +82,33 @@ body {
     padding: 10px 0;
 }
 
+.color-select-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.eraser {
+    /* height: 100%; */
+    padding: 2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.eraser:hover {
+    background-color: var(--light-blue);
+}
 
 /*Color Selection */
-.color-select-container {
+.color-boxes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    margin: 1em 0;
 }
 
 .color {
@@ -122,9 +143,6 @@ body {
     background-color: black;
 }
 
-.change-color {
-    background-color: rgb(197, 238, 238);
-}
 
 /*Reset Button Styles*/
 .reset-button-container {
