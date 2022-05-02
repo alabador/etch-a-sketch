@@ -2,7 +2,9 @@ const container = document.querySelector('.container');
 const slider = document.querySelector('.slider');
 const gridSizeText = document.querySelector('.grid-size-text');
 const resetButton = document.querySelector('.reset-button');
+const colors = document.querySelectorAll('.color');
 let gridSize = 0;
+let colorArr = [];
 
 for (let i=0; i<(16*16); i++) {
     let div = document.createElement('div');
@@ -10,11 +12,26 @@ for (let i=0; i<(16*16); i++) {
     container.appendChild(div);
 }
 
+// colors.forEach(color => {
+//     color.addEventListener('click', function(e) {
+//         let fullClass = e.target.className;
+//         let colorClass = fullClass.replace('color', '');
+//         return colorClass;
+//     })
+// });
+
+
+
+// colors.forEach(color => {
+//     colorArr.push(color.className.replace('color ', ''));
+//     console.log(colorArr);
+// });
 
 container.addEventListener('mouseover', function(e) {
     const target = e.target;
     if (target.matches('.square')) {
         target.classList.add('change-color');
+        // target.classList.add(colorClass);
     }
 })
 
