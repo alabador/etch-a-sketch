@@ -52,12 +52,14 @@ body {
     font-weight: 700;
     font-size: 3em;
     color: var(--light-text);
-    margin-bottom: 1em;
+    /* margin-bottom: 0.5em; */
     margin-top: 0.5em;
 }
 
 .divider {
-    
+    width: 90%;
+    border: 1px var(--grid-border) solid;
+    margin: 1em 0;
 }
 
 .slider-container {
