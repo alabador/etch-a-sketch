@@ -3,8 +3,8 @@
 
 /*Variables*/
 :root {
-    --grid-line-color: rgb(201, 201, 201);
-    --grid-border: rgb(121, 121, 121);
+    --grid-line-color: rgb(190, 190, 190);
+    --grid-border: rgb(212, 212, 212);
     --body-bg: rgb(30, 30, 56); 
     --light-text: rgb(240, 240, 240);
 }
@@ -41,13 +41,23 @@ body {
     align-items: flex-start;
     height: 100%;
     justify-content: flex-start;
-    
+    /* background-color: var(--grid-border);   */
+    border: 3px solid var(--grid-border);
+    padding-left: 1em;
+    margin-right: 25px;
+    border-radius: 10px;
 }
 
 .title {
     font-weight: 700;
     font-size: 3em;
     color: var(--light-text);
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+.divider {
+    
 }
 
 .slider-container {
@@ -59,8 +69,20 @@ body {
     color: var(--light-text);
 }
 
+.slider-label {
+    font-size: 1.3em;
+}
+
+.slider {
+    padding: 10px 0;
+}
+
 .sketch-container {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--grid-border);
+    
 }
 
 .container {
@@ -69,7 +91,9 @@ body {
     /* grid-template-rows: repeat(16, 1fr); */
     width: 500px;
     height: 100%;
-    border: 3px solid var(--grid-border);
+
+    /* moved border from container to parent */
+    /* border: 3px solid var(--grid-border); */ 
 }
 
 .square {
