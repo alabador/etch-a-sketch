@@ -4,6 +4,7 @@ const slider = document.querySelector('.slider');
 const gridSizeText = document.querySelector('.grid-size-text');
 const resetButton = document.querySelector('.reset-button');
 const colors = document.querySelectorAll('.color');
+const eraser = document.querySelector('.eraser');
 
 let color;
 let gridSize = 0;
@@ -19,6 +20,8 @@ for (let i=0; i<(16*16); i++) {
 colors.forEach(currentColor => {
     currentColor.addEventListener('click', chooseColor);
 });
+
+eraser.addEventListener('click', chooseColor);
 
 /*Color selection*/
 function chooseColor(e) {
@@ -45,6 +48,9 @@ function chooseColor(e) {
     }
     if (e.target.dataset.color == 'black') {
         color = 'black';
+    }
+    if (e.target.dataset.color == 'eraser') {
+        color = '#1e1e38';
     }
 }
 
